@@ -1,0 +1,26 @@
+Install python 2.7.14 from this link : https://www.python.org/downloads/
+You may need to uninstall Python 3.0 if you don't know to export environment variables in Linux.
+
+Open terminal and type : python --version
+Make sure it prints Python 2.7.14
+
+Type : pip --version
+Make sure it prints Pip 9.0.x (python 2.7)
+
+
+Type the following commands one by one and install all the dependencies.
+pip install numpy==1.11.3
+pip install matplotlib
+pip install scipy
+pip install pybrain
+
+Download the glove dictionary file (131 Mb) from this link : https://drive.google.com/open?id=19Qpt9DPWH_1ABpSCnGOrduHi0WmhrVJH
+Unzip it. Copy the glove.6B.100d.txt file to project's root folder.
+
+Running the program
+ 1. Run preprocessor by : python preprocessing_engine.py
+    This will generate an output.txt in the project's root folder.
+
+ 2. Run neural engine by python neural_engine.by
+    This will generate a summary-text.txt in the project's root folder.
+    This will take a lot of time, depending on the power of your machine. Be patient or reduce the contents of input.txt
